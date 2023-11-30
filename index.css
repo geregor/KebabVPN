@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F3F3F3;
+}
+
+header {
+    height: 100px;
+    background: white;
+}
+
+.container-flex {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    display: flex;
+    gap: 6px;
+}
+
+.logo__img {
+    width: 39px;
+    height: 39px;
+}
+
+.logo__span {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 64px;
+}
+
+.header-nav ul li{
+    display: inline;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 41px; /* 227.778% */
+}
+
+.header-nav ul li:last-child {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.green-light {
+    position: absolute;
+    width: 898px;
+    height: 898px;  
+    border-radius: 898px;
+    background: rgba(122, 248, 203, 0.30);
+
+    /* Blur - 420 */
+    filter: blur(210px);
+    top: -750px;
+    z-index: 2;
+}
+
+.main-flex {
+    padding-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    background-image: url("images/main.png");
+    background-size: contain;
+    padding-bottom: 99px;
+}
+
+.main__h1 {
+    font-family: Montserrat;
+    font-size: 52px;
+    font-weight: 900;
+}
+
+.main__span {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 41px;
+    width: 944px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.main-button {
+    display: flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+    border: 0px solid;
+    border-radius: 100px;
+    background: #C2FBD7;
+    box-shadow: 0px 16px 32px 0px rgba(44, 187, 99, 0.15), 0px 8px 16px 0px rgba(44, 187, 99, 0.15), 0px 4px 8px 0px rgba(44, 187, 99, 0.15), 0px 2px 4px 0px rgba(44, 187, 99, 0.15), 0px 1px 2px 0px rgba(44, 187, 99, 0.15), 0px -25px 18px -14px rgba(44, 187, 99, 0.20) inset;
+}
+
+.main-button__span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #008000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.advantages {
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 64px;
+    padding-bottom: 85px;
+    gap: 32px;
+}
+
+.advantages-title {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-title img {
+    height: fit-content;
+}
+
+.advantages-title__span {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 41px;
+}
+
+.advantages-containers {
+    display: flex;
+    gap: 24px;
+}
+
+.containers__container {
+    width: 280px;
+    height: 361px;
+    border-radius: 6px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 1px 3px 0px rgba(29, 30, 38, 0.10), 0px 3px 6px 0px rgba(29, 30, 38, 0.10);
+}
+
+.containers__img {
+    width: 128px;
+    height: 128px;
+    margin: 32px 76px;
+}
+
+.containers__h5 {
+    color: #2C2C2C;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.containers__span {
+    margin: 12px 20px;
+    color: #2C2C2C;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.reviews {
+    padding-top: 64px;
+    padding-bottom: 24px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: url("images/to-fotter.png");
+    background-size: contain;
+}
+
+.reviews__title {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 41px;
+    margin-bottom: 10px;
+}
+
+.reviews-review {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.review {
+    display: flex;
+    gap: 24px;
+    width: 433px;
+    height: 99px;
+    border-radius: 10px;
+    background: #F3F3F3;
+    align-items: center;
+    text-align: left;
+}
+
+.yellow-light {
+    position: absolute;
+    width: 817px;
+    height: 721px;
+    background-color: #FFF2D0;
+    filter: blur(160px);
+    z-index: -1;
+    top: 426px;
+    right: -455px;
+    opacity: 0.6;
+}
+
+.review__img {
+    width: 51px;
+    height: 51px;
+    border-radius: 51px;
+    margin-left: 24px;
+}
+
+.review__span {
+    width: 256px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer__img {
+    background-image: url("images/fotter.png");
+    background-size: contain;
+    height: 74.5px;
+}
+
+.any-green-light {
+    position: absolute;
+    width: 666.422px;
+    height: 1001px;
+    flex-shrink: 0;
+    background-color: rgba(168, 255, 118, 0.30);
+    filter: blur(310px);
+    z-index: -1;
+    top: 700px;
+    left: 800px;
+}
+
+footer {
+    height: 150px;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.ul-top {
+    display: flex;
+    gap: 64px;
+}
+
+.ul-top li {
+    display: inline;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 41px; 
+}
+
+.ul-bottom {
+    display: flex;
+    gap: 24px;
+}
+
+.ul-bottom li {
+    display: inline;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+}
+
